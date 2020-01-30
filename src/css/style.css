@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px; }
+  body .navbar {
+    background: #353535; }
+    body .navbar .navbar-brand {
+      padding: 15px;
+      color: #ffffff; }
+    body .navbar li {
+      padding: 10px; }
+      body .navbar li a {
+        font-weight: bold;
+        color: #ffffff; }
+      body .navbar li .sub-menu {
+        display: none;
+        position: absolute;
+        margin-left: -10px;
+        z-index: 99;
+        min-width: 180px;
+        padding-top: 10px; }
+        body .navbar li .sub-menu li {
+          list-style: none;
+          background: #353535;
+          padding-top: 10px;
+          background: #ffffff; }
+          body .navbar li .sub-menu li a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold; }
+
+body .navbar .navbar-brand:hover {
+  background: #4267b2; }
+
+body .navbar li:hover {
+  background: #4267b2;
+  transition: all 1s; }
+  body .navbar li:hover a {
+    text-transform: uppercase; }
+
+body .navbar li:hover .sub-menu {
+  display: block; }
+
+body .navbar .navbar-nav li .sub-menu li:hover {
+  transition: all 2s;
+  background: #4267b2; }
+  body .navbar .navbar-nav li .sub-menu li:hover a {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-left: 15px; }

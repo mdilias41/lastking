@@ -1,0 +1,101 @@
+
+$bg:#353535;
+$bg2:#4267b2;
+$bg3:#ffffff;
+$font:#ffffff;
+$font2:#000000;
+*{
+	margin:0;
+	padding: 0;
+}
+// body///
+body{
+font-family: 'Poppins', sans-serif;
+font-size: 16px;
+// navbar///
+.navbar{
+	background: $bg;
+
+	// navbar-brand//
+	.navbar-brand{
+		padding: 15px;
+		color:$font;
+}
+// list item//
+	li{
+		padding: 10px;
+	a {
+
+
+		font-weight: bold;
+		color: $font;
+
+
+	}
+	.sub-menu{
+		display: none;
+	  position: absolute;
+		margin-left: -10px;
+    z-index: 99;
+		min-width: 180px;
+    padding-top: 10px;
+
+  li{
+			list-style: none;
+			background: $bg;
+      padding-top: 10px;
+			background: $bg3;
+
+
+			a{
+				text-decoration: none;
+				  color:$font2;
+					font-weight: bold;
+
+			}
+
+		}
+	}
+
+	}
+}
+// navbar end here//
+
+}
+// body end here//
+
+// All hover css//
+body{
+	.navbar{
+		// navbar- brand///
+		.navbar-brand:hover{
+			background: $bg2;
+		}
+
+		// navbar list////
+
+    	li:hover{
+				background: $bg2;
+				transition: all 1s;
+				a{text-transform: uppercase;}
+			}
+		li:hover .sub-menu{
+			display: block;
+
+
+       }
+.navbar-nav{
+	li{
+		.sub-menu li:hover{
+			transition: all 2s;
+			background: $bg2;
+			a{color:$font;
+        text-transform: uppercase;
+			 margin-left: 15px;
+			}
+		}
+
+	}
+}
+	}
+}
