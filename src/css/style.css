@@ -5,49 +5,88 @@
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px; }
-  body .navbar {
-    background: #353535; }
-    body .navbar .navbar-brand {
-      padding: 15px;
-      color: #ffffff; }
-    body .navbar li {
-      padding: 10px; }
-      body .navbar li a {
-        font-weight: bold;
-        color: #ffffff; }
-      body .navbar li .sub-menu {
-        display: none;
-        position: absolute;
-        margin-left: -10px;
-        z-index: 99;
-        min-width: 180px;
-        padding-top: 10px; }
-        body .navbar li .sub-menu li {
-          list-style: none;
-          background: #353535;
-          padding-top: 10px;
-          background: #ffffff; }
-          body .navbar li .sub-menu li a {
-            text-decoration: none;
-            color: #000000;
-            font-weight: bold; }
 
+/*nvbar css   start here*/
+.navbar {
+  background: #353535;
+  box-shadow: 0px 1px #dddddd;
+  z-index: 99; }
+
+body .navbar .navbar-brand {
+  padding: 15px;
+  color: #ffffff; }
+
+body .navbar li {
+  padding: 10px; }
+
+body .navbar li a {
+  color: #ffffff; }
+
+body .navbar li .sub-menu {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 99;
+  padding-top: 10px;
+  margin-left: -10px; }
+
+body .navbar li .sub-menu li {
+  list-style: none;
+  padding-top: 15px;
+  background: #ffffff; }
+
+body .navbar li .sub-menu li a {
+  text-decoration: none;
+  color: #000000; }
+
+/*navbar css end here*/
+.carousel-item img {
+  width: 100%;
+  height: 400px; }
+
+/*hover css here*/
 body .navbar .navbar-brand:hover {
   background: #4267b2; }
 
-body .navbar li:hover {
-  background: #4267b2;
-  transition: all 1s; }
-  body .navbar li:hover a {
-    text-transform: uppercase; }
+.navbar li:hover {
+  background: #4267b2; }
 
 body .navbar li:hover .sub-menu {
   display: block; }
 
 body .navbar .navbar-nav li .sub-menu li:hover {
-  transition: all 2s;
   background: #4267b2; }
-  body .navbar .navbar-nav li .sub-menu li:hover a {
-    color: #ffffff;
-    text-transform: uppercase;
-    margin-left: 15px; }
+
+body .navbar .navbar-nav li .sub-menu li:hover {
+  border-bottom: 3px solid #353535;
+  position: relative;
+  animation-name: mymove;
+  animation-duration: 2s; }
+
+/*animation here*/
+@keyframes mymove {
+  0% {
+    left: 0px; }
+  25% {
+    left: 10px; }
+  75% {
+    left: 0px; } }
+
+body .navbar .navbar-nav li .sub-menu li:hover a {
+  color: #ffffff; }
+
+/*hover css end here*/
+/*----------------------------------------*/
+/*----------------------------------------*/
+/*----------------------------------------*/
+/*---------------flashfile css-------------------------*/
+.brand-text h2 {
+  font-weight: bold;
+  background: yellow;
+  text-align: center;
+  margin-top: 25px; }
+
+.my-btn {
+  margin-top: 18px; }
+
+/*---------------flashfile css end-------------------------*/
